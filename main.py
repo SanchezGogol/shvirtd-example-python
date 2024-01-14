@@ -3,6 +3,7 @@ from flask import request
 import os
 import mysql.connector
 from datetime import datetime
+from dotenv import load_dotenv
 
 app = Flask(__name__)
 db_host=os.environ.get('DB_HOST')
